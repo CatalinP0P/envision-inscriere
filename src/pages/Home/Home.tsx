@@ -20,9 +20,7 @@ export default function Home() {
       <Detalii />
       <Schedule />
       <Sponsors />
-      <div>
-        <SignUp />
-      </div>
+      <SignUp />
       <Organizators />
     </div>
   );

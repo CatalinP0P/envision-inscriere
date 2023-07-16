@@ -1,11 +1,17 @@
 import axios from "axios";
-import React, { ChangeEvent, ChangeEventHandler, useState } from "react";
+import React, {
+  ChangeEvent,
+  ChangeEventHandler,
+  useRef,
+  useState,
+} from "react";
 import FormInput from "./FormInput";
 import Button from "../ui/Button";
 import FormTextArea from "./FormTextArea";
 import { loadavg } from "os";
 import Reveal from "../Animation/Reveal";
 import SlideFromBottom from "../Animation/SlideFromBottom";
+import { format } from "path";
 
 interface FormProps {
   email: string;
@@ -23,6 +29,10 @@ export default function SignForm() {
   const [sending, setSending] = useState(false);
   const [alertShown, setAlertStatus] = useState<boolean>(false);
 
+  var date = new Date();
+  var formatedDate = date.toISOString().split("T")[0];
+  const todayDate = formatedDate;
+
   const [formData, setFormData] = useState<FormProps>({
     email: "",
     name: "",
@@ -37,7 +47,7 @@ export default function SignForm() {
   const handleSubmit: any = async (e: any) => {
     e.preventDefault();
     setSending(true);
-    console.log("Submitting form");
+
     try {
       const res = await axios.post(
         "http://81.181.198.46:100/participants/add",
@@ -113,6 +123,7 @@ export default function SignForm() {
           type="date"
           title="Data Nasterii"
           name="birthday"
+          value={todayDate}
           onChange={handleChange}
         />
 
@@ -123,18 +134,28 @@ export default function SignForm() {
         ></FormTextArea>
 
         <div className="flex flex-row gap-2 ms-1 text-xl items-start">
-          <input type="checkbox" className="mt-[8px]" />
+          <input
+            required={true}
+            type="checkbox"
+            className="mt-[8px]"
+          />
           <label>
             Sunt de acord cu prelucrarea datelor cu caracter personal
           </label>
         </div>
 
         <div className="flex flex-row gap-2 ms-1 text-xl items-start">
-          <input type="checkbox" className="mt-[8px]" name="terms" />
+          <input
+            required={true}
+            type="checkbox"
+            className="mt-[8px]"
+          />
           <label>Am citit regulamentul competitiei</label>
         </div>
         {error && (
-          <label className="text-red-600 text-semibold text-2xl">{error}</label>
+          <label className="text-red-600 text-semibold text-lg md:text-2xl">
+            {error}
+          </label>
         )}
         <div>
           <div
