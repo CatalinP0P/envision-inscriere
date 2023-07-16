@@ -7,7 +7,7 @@ export default function SignUp() {
   return (
     <Container className="py-24 flex flex-col items-center" id="sign">
       <Reveal>
-        <label className="font-bold uppercase text-md text-primary"></label>
+        <label className="font-bold uppercase text-md text-primary">Pana in data de 25 Septembrie</label>
       </Reveal>
 
       <Reveal>

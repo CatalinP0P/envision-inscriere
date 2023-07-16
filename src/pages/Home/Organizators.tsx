@@ -20,7 +20,7 @@ export default function Organizators() {
         </label>
       </Reveal>
 
-      <Container className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pt-24">
+      <Container className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-8 pt-24">
         <PersonCard imageURL={image} name="Nume Prenume" position="Pozitie" />
         <PersonCard imageURL={image} name="Nume Prenume" position="Pozitie" />
         <PersonCard imageURL={image} name="Nume Prenume" position="Pozitie" />

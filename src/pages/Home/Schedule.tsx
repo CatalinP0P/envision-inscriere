@@ -72,9 +72,13 @@ export default function Schedule() {
         </label>
       </Reveal>
 
-      <div className="flex flex-col gap-8 py-24">
+      <div className="flex flex-col gap-4 md:gap-8 py-24">
         {calendar.map((schedule: ScheduleProps) => {
-          return <ScheduleCard schedule={schedule} />;
+          return (
+            <div key={Math.random() * 1000}>
+              <ScheduleCard schedule={schedule} />
+            </div>
+          );
         })}
       </div>
     </Container>
@@ -101,23 +105,27 @@ interface ScheduleProps {
 const ScheduleCard = ({ schedule }: { schedule: any }) => {
   return (
     <SlideFromBottom>
-      <div className="relative flex flex-row py-4 px-8 w-full h-full items-center shadow-lg gap-24">
+      <div className="relative flex flex-row py-4 px-8 w-full h-full items-center shadow-lg gap-12 md:gap-24">
         <label
           className={
-            "text-primary text-6xl ps-4 font-semibold " +
+            "text-primary text-4xl md:text-6xl ps-4 font-semibold " +
             (schedule.date.includes(">") ? " translate-x-[-35px] -me-8" : "")
           }
         >
           {schedule.date}
         </label>
-        <div className="absolute left-40 h-[75%] w-[2px] bg-primary my-4" />
+        <div className="absolute left-28 md:left-40 h-[75%] w-[2px] bg-primary my-4" />
         <div className="w-full flex flex-col gap-4">
           <label className="mx-auto text-2xl font-bold ms-2 uppercase text-black/75">
             {schedule.title}
           </label>
           <ul className="w-full flex flex-col gap-2">
             {schedule.content.map((x: any) => {
-              return <ListItem hour={x.hour} title={x.title} />;
+              return (
+                <div key={x.title}>
+                  <ListItem hour={x.hour} title={x.title} />
+                </div>
+              );
             })}
           </ul>
         </div>

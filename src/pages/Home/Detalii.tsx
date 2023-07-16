@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Container from "../../components/ui/Container";
-import backgroundImage from "../../assets/codingbackground.jpeg";
+import backgroundImage from "../../assets/coding2.jpg";
 import Reveal from "../../components/Animation/Reveal";
 
 import { ReactComponent as IdeaSVG } from "../../assets/idea.svg";
@@ -18,7 +18,7 @@ export default function Detalii() {
         className="absolute left-0 top-0 w-full h-full object-cover z-[-2]"
         src={backgroundImage}
       />
-      <div className="absolute left-0 top-0 w-full h-full z-[-1] bg-primary/90 transition-all" />
+      <div className="absolute left-0 top-0 w-full h-full z-[-1] bg-primary/95 transition-all" />
       <Container className="flex flex-col py-24 items-center text-white">
         <Reveal color="white">
           <label className="font-bold uppercase text-md text-white">
@@ -37,7 +37,7 @@ export default function Detalii() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-4 gap-y-16 justify-between pt-24 whitespace-nowrap">
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-lg lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer p-4 rounded-full " +
@@ -54,7 +54,7 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-lg lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
@@ -69,7 +69,7 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-lg lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
@@ -84,7 +84,7 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-lg lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
