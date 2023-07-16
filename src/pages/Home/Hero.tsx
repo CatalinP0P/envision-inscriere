@@ -6,6 +6,18 @@ import Reveal from "../../components/Animation/Reveal";
 import { ReactComponent as Envision } from "../../assets/Envision2.svg";
 
 export default function Hero() {
+  const scrollToSign = () => {
+    const div = document
+      .getElementById("sign")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToDetails = () => {
+    const div = document
+      .getElementById("details")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen transition-all w-full relative h-full">
       <div className="absolute left-0 top-0 w-full h-full bg-primary/90 z-[2] " />
@@ -31,8 +43,14 @@ export default function Hero() {
         </Reveal>
         <Reveal color="white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-fit pt-16 overflow-visible p-2">
-            <Button color="white">Inscrie-te Acum</Button>
-            <Button variant="secondary" color="white">
+            <Button color="white" onClick={() => scrollToSign()}>
+              Inscrie-te Acum
+            </Button>
+            <Button
+              variant="secondary"
+              color="white"
+              onClick={() => scrollToDetails()}
+            >
               Detalii
             </Button>
           </div>
