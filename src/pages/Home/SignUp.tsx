@@ -5,7 +5,7 @@ import SignForm from "../../components/Form/SignForm";
 
 export default function SignUp() {
   return (
-    <Container className="py-24 flex flex-col items-center">
+    <Container className="py-24 flex flex-col items-center" id="sign">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary"></label>
       </Reveal>

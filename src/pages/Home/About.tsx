@@ -8,7 +8,7 @@ import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 export default function About() {
   return (
     <div className="relative">
-      <Container className="flex flex-col items-center py-24 text-center relative">
+      <Container className="flex flex-col items-center py-24 text-center relative" id="details">
         <Image className="hidden md:block absolute right-4 left-auto bottom-4 md:top-auto w-[30%] max-w-[400px] h-fit z-[25] opacity-75"></Image>
         <Reveal>
           <label className="font-bold uppercase text-md text-primary">
