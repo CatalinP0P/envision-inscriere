@@ -30,7 +30,10 @@ export default function Reveal({
   }, [isInView]);
 
   return (
-    <div className={"relative w-fit overflow-hidden " + className} ref={divRef}>
+    <div
+      className={"relative w-fit overflow-hidden " + className}
+      ref={divRef}
+    >
       <motion.div
         variants={{
           hidden: {
@@ -39,6 +42,7 @@ export default function Reveal({
           },
           visible: { y: -5, opacity: 1 },
         }}
+        className="py-2"
         initial="hidden"
         animate={animationControls}
         transition={{ duration: 0.5, delay: 0.25 }}
