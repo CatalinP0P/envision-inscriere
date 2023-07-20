@@ -7,7 +7,7 @@ import image from "../../assets/undraw_programming_re_kg9v.svg";
 
 export default function Organizators() {
   return (
-    <div className="py-24 bg-black/5 flex flex-col items-center">
+    <div className="py-24 flex flex-col items-center">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
           carduri Organizatori

@@ -9,7 +9,7 @@ import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Sponsors() {
   return (
-    <div className="w-full bg-black/5 py-24 flex flex-col items-center text-center">
+    <div className="w-full py-24 flex flex-col items-center text-center">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
           multimim observatorul prahovean si la cocos
@@ -23,7 +23,7 @@ export default function Sponsors() {
       </Reveal>
 
       <SlideFromBottom>
-        <Container className="grid grid-cols-3 justify-between items-center pt-24 pb-8">
+        <Container className="grid grid-cols-3 justify-between items-center pt-24">
           <img className="w-full object-contain" src={observatorul} />
           <img className="w-full max-h-[150px] object-contain" src={cocos} />
           <Envision width={"full"} />
