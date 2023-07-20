@@ -7,10 +7,15 @@ import { ReactComponent as IdeaSVG } from "../../assets/idea.svg";
 import { ReactComponent as WorkShopSVG } from "../../assets/workshop.svg";
 import { ReactComponent as RankingSVG } from "../../assets/ranking.svg";
 import { ReactComponent as CodingSVG } from "../../assets/coding.svg";
+import { ReactComponent as TriangleSVG } from "../../assets/triangle.svg";
+
+import { ReactComponent as HammerSVG } from "../../assets/hammer.svg";
+import { ReactComponent as PeopleSVG } from "../../assets/people.svg";
+
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Detalii() {
-  const [selectedTab, selectTab] = useState("");
+  const [selectedTab, selectTab] = useState("experienta-envision");
 
   return (
     <div className="w-full relative transition-all">
@@ -40,13 +45,21 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer p-4 rounded-full " +
-                  (selectedTab == "experienta-envision"
-                    ? "bg-white/60"
-                    : " bg-white")
+                  "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
                 }
                 onClick={() => selectTab("experienta-envision")}
               >
+                <TriangleSVG
+                  width={64}
+                  height={64}
+                  fill="white"
+                  className={
+                    " left-[50%] translate-x-[-50%] top-[-64px] " +
+                    (selectedTab == "experienta-envision"
+                      ? " absolute"
+                      : " hidden")
+                  }
+                />
                 <IdeaSVG width={"full"} height={"full"} />
               </div>
               <label>experienta envision</label>
@@ -57,14 +70,22 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
-                  (selectedTab == "workshop" ? "bg-white/60" : " bg-white")
+                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
                 }
-                onClick={() => selectTab("workshop")}
+                onClick={() => selectTab("participare")}
               >
-                <WorkShopSVG width={"full"} height={"full"} />
+                <TriangleSVG
+                  width={64}
+                  height={64}
+                  fill="white"
+                  className={
+                    " left-[50%] translate-x-[-50%] top-[-64px] " +
+                    (selectedTab == "participare" ? " absolute" : " hidden")
+                  }
+                />
+                <PeopleSVG width={"full"} height={"full"} />
               </div>
-              <label>workshop-uri</label>
+              <label>Participarea in competitie</label>
             </div>
           </SlideFromBottom>
 
@@ -72,11 +93,19 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
-                  (selectedTab == "proba" ? "bg-white/60" : " bg-white")
+                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
                 }
                 onClick={() => selectTab("proba")}
               >
+                <TriangleSVG
+                  width={64}
+                  height={64}
+                  fill="white"
+                  className={
+                    " left-[50%] translate-x-[-50%] top-[-64px] " +
+                    (selectedTab == "proba" ? " absolute" : " hidden")
+                  }
+                />
                 <CodingSVG width={"full"} height={"full"} />
               </div>
               <label>Proba blitzkrieg</label>
@@ -87,11 +116,19 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer p-8 rounded-full " +
-                  (selectedTab == "jurizare" ? "bg-white/60" : " bg-white")
+                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
                 }
                 onClick={() => selectTab("jurizare")}
               >
+                <TriangleSVG
+                  width={64}
+                  height={64}
+                  fill="white"
+                  className={
+                    " left-[50%] translate-x-[-50%] top-[-64px] " +
+                    (selectedTab == "jurizare" ? " absolute" : " hidden")
+                  }
+                />
                 <RankingSVG width={"full"} height={"full"} />
               </div>
               <label>jurizare</label>
@@ -101,14 +138,14 @@ export default function Detalii() {
 
         <div
           className={
-            "transition-all flex flex-row items-center pt-12 text-xl lg:text-2xl font-base " +
+            "transition-all flex flex-row items-center pt-12 text-lg lg:text-xl font-base " +
             (selectedTab != "" ? "min-h-[200px]" : "min-h-0")
           }
         >
           {selectedTab == "experienta-envision" && (
             <Reveal color="white">
-              <div className="text-white text-justify">
-                ENVISION este dorința de a uni programatorii zilei de mâine, a
+              <div className="text-white text-justify indent-8">
+                Envision este dorința de a uni programatorii zilei de mâine, a
                 crea perspective noi, forma noi echipe și programa împreună,
                 spre un viitor mai bun. Timp de două zile vom trăi împreună
                 emoțiile subiectelor, adrenalina cronometrului și pasiunea
@@ -118,46 +155,68 @@ export default function Detalii() {
             </Reveal>
           )}
 
-          {selectedTab == "workshop" && (
+          {selectedTab == "participare" && (
             <Reveal color="white">
-              <div className="text-white text-justify pt-8">
-                ENVISION oferă participanților 3 workshop-uri realizate de către
-                (nume organizatori), în cadrul cărora vor fi oferite informații
-                valoroase pentru cei ce vor să urmeze o cariera în domeniul IT.
-                Aceste workshop-uri vor dura maxim jumătate de ora și se vor
-                realiza sub forma unor "ted-talks". Nu au participare
-                obligatorie însă vom încuraja toți concurenții să ia parte la
-                acestea.
+              <div className="text-white text-justify pt-8  indent-8">
+                Participarea este individuala sau in echipe a cate 2 concurenti.
+                Fiecare concurent va putea lua parte intr-o singura echipa.
+                Participarea la competitia envision este conditionata de
+                urmatoarele:
+                <div className="flex flex-col gap-1 indent-8">
+                  <label>
+                    1) Inscrierea pe platforma code-envision.ro pana in data de
+                    25 septembrie
+                  </label>
+                  <label>
+                    2) Prezentarea la locul de desfasurare al competitiei.{" "}
+                  </label>
+                  <label>
+                    3) Completarea acordului parental cu privire la : deplasare,
+                    cazare, masa.
+                  </label>
+                  <label>
+                    4) Completarea acordului cu privire la prelucrarea datelor
+                    cu caracter personal in cadrul competitiei cat si in afara
+                    ei.
+                  </label>
+                </div>
+                Participarea va fi confirmata in momentul in care concurentii
+                vor fi contactati de catre organizatori, in saptamana 20-24
+                septembrie.
               </div>
             </Reveal>
           )}
 
           {selectedTab == "proba" && (
             <Reveal color="white">
-              <div className="text-white text-justify pt-8">
-                Pe parcursul maratonului se va organiza și un Workshop în care
-                vă fi prezentată o paradigmă de programare utilă concurenților.
-                Cei ce vor reuși integrarea acestei paradigme în codul lor și
-                vor putea explica funcționalitatea acesteia , vor primi un
-                premiu special .
+              <div className="text-white text-justify pt-8 indent-8">
+                Subiectul de concurs va fi distribuit tututor participantilor in
+                momentul deschiderii oficiale a competitiei. Cerinta va fi
+                efectuata de catre concurenti in orice limbaj le este la
+                indemana, cu orice tehnologie. Singurul aspect important din
+                acest punct de vedere este cunoasterea temeinica a
+                tehnologiei/limbajulii ales. Concurentii vor avea la dispozitie
+                24 de ore pentru implementarea cerintei. Participantii au libera
+                alegere pentru determinarea perioadelor de lucru, odihna,
+                distractie, s.a.m.d. Totodata , le revine completa raspundere
+                asupra starii de sanatate generata de lipsa odihnei.
               </div>
             </Reveal>
           )}
 
           {selectedTab == "jurizare" && (
             <Reveal color="white">
-              <div className="text-white text-justify pt-8">
-                Jurizarea lucrărilor se va realiza imediat după finalizarea
-                programului. Fiecărui concurent i se va aloca un timp maxim
-                prezentare de către comisia de jurizare, în funcție de numărul
-                de concurenți și cerința data. În comisia de jurizare vor
-                participa atât membrii tehnici cât și non-tehnici. Echipa
-                BINARYTEAM va asigura 3 membri tehnici în comisia de jurizare:
-                Catalin , Liviu și Denis, totodată cei ce se vor ocupa și de
-                infrastructura digitală a concursului. Propunem ca toți
-                organizatorii să aducă membri in juriu. Vor exista două bareme
-                de jurizare : Tehnic și Nontehnic. În momentul elaborării
-                subiectelor, vor fi scrise și baremele.
+              <div className="text-white text-justify pt-8 indent-8">
+                Criteriile de jurizare pentru proiectele realizate vor fi
+                distribuite impreuna cu subiectele. Proiectele care se vor
+                juriza vor fi prezentate de catre realizatori comisiei de
+                jurizare , organizatorilor si bineinteles, intregului public
+                interesat. Vor participa la jurizare doar proiectele care
+                respecta conditiile minime de jurizare. Fiecare membru al
+                juriului acorda un punctaj , 0-100, conform baremului de
+                corectare. Scorul final al unui proiect reprezinta media
+                aritmetica a tuturor scorurilor din juriu. Nu se admit
+                contestatii sau re-evaluari ale proiectelor.
               </div>
             </Reveal>
           )}

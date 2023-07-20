@@ -19,9 +19,9 @@ export default function Home() {
       <About />
       <Detalii />
       <Schedule />
-      <Sponsors />
-      <SignUp />
       <Organizators />
+      <SignUp />
+      <Sponsors />
     </div>
   );
 }
