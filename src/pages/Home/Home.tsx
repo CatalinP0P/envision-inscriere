@@ -11,6 +11,7 @@ import SignUp from "./SignUp";
 import image from "../../assets/undraw_pair_programming_re_or4x.svg";
 import PersonCard from "../../components/ui/PersonCard";
 import Organizators from "./Organizators";
+import Awards from "./Awards";
 
 export default function Home() {
   return (
@@ -19,8 +20,13 @@ export default function Home() {
       <About />
       <Detalii />
       <Schedule />
-      <Organizators />
+      <div className="w-full bg-black/5">
+        <Awards />
+      </div>
       <SignUp />
+      <div className="w-full bg-black/5">
+        <Organizators />
+      </div>
       <Sponsors />
     </div>
   );
