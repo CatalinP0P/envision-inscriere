@@ -8,7 +8,6 @@ import Detalii from "./Detalii";
 import Schedule from "./Schedule";
 import Sponsors from "./Sponsors";
 import SignUp from "./SignUp";
-import image from "../../assets/undraw_pair_programming_re_or4x.svg";
 import PersonCard from "../../components/ui/PersonCard";
 import Organizators from "./Organizators";
 import Awards from "./Awards";
