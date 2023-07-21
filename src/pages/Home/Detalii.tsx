@@ -27,7 +27,7 @@ export default function Detalii() {
       <Container className="flex flex-col py-24 items-center text-white">
         <Reveal color="white">
           <label className="font-bold uppercase text-md text-white">
-            Program, Proba, Jurizare
+            experienta, participare, proba
           </label>
         </Reveal>
 
@@ -108,7 +108,7 @@ export default function Detalii() {
                 />
                 <CodingSVG width={"full"} height={"full"} />
               </div>
-              <label>Proba blitzkrieg</label>
+              <label>Subiectul competitiei</label>
             </div>
           </SlideFromBottom>
         </div>

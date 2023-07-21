@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../components/Animation/Reveal";
-import podiumImg from "../../assets/podiumEnvision.png";
+import podiumImg from "../../assets/awards.svg";
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Awards() {
@@ -18,8 +18,8 @@ export default function Awards() {
         </label>
       </Reveal>
 
-      <SlideFromBottom>
-        <img src={podiumImg} className="w-[95%] max-w-[60rem] mx-auto pt-32" />
+      <SlideFromBottom className="w-full" >
+        <img src={podiumImg} className="w-[95%] max-w-[40rem] mx-auto pt-32" />
       </SlideFromBottom>
     </div>
   );

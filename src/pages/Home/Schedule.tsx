@@ -4,15 +4,22 @@ import Container from "../../components/ui/Container";
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 const calendar = [
-  { date: ">25", title: "Inscrierea Concurentilor", content: [] },
+  {
+    date: ">25",
+    month: "Septembrie",
+    title: "Inscrierea Concurentilor",
+    content: [],
+  },
   {
     date: "29",
+    month: "Septembrie",
     title:
       "Participanții vor sosi în oraș și vor fi preluați de către voluntari.",
     content: [],
   },
   {
     date: "30",
+    month: "Septembrie",
     title: "PRIMA ZI A COMPETIȚIEI",
     content: [
       {
@@ -28,6 +35,7 @@ const calendar = [
   },
   {
     date: "01",
+    month: "Octombrie",
     title: "A DOUA ZI A COMPETIȚIEI",
     content: [
       {
@@ -45,6 +53,7 @@ const calendar = [
   },
   {
     date: "02",
+    month: "Octombrie",
     title: "Final",
     content: [
       {
@@ -106,14 +115,19 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
   return (
     <SlideFromBottom>
       <div className="relative flex flex-row py-4 px-8 w-full h-full items-center shadow-lg gap-12 md:gap-24">
-        <label
-          className={
-            "text-primary text-4xl md:text-6xl ps-4 font-semibold " +
-            (schedule.date.includes(">") ? " translate-x-[-35px] -me-8" : "")
-          }
-        >
-          {schedule.date}
-        </label>
+        <div className="flex flex-col gap-2 items-center">
+          <label
+            className={
+              "text-primary text-4xl md:text-6xl font-semibold " +
+              (schedule.date.includes(">") ? " translate-x-[-35px] -me-8" : "")
+            }
+          >
+            {schedule.date}
+          </label>
+          <label className="text-lg inline-block text-primary font-bold">
+            {schedule.month}
+          </label>
+        </div>
         <div className="absolute left-28 md:left-40 h-[75%] w-[2px] bg-primary my-4" />
         <div className="w-full flex flex-col gap-4">
           <label className="mx-auto text-2xl font-bold ms-2 uppercase text-black/75">

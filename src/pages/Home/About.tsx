@@ -16,7 +16,7 @@ export default function About() {
         <Image className="block absolute right-4 left-auto bottom-0 md:top-auto min-w-[20rem] w-[30%] max-w-[400px] h-fit z-[25] opacity-75"></Image>
         <Reveal>
           <label className="font-bold uppercase text-md text-primary">
-            Ce, Cand si Cum?
+            Ce, si cum?
           </label>
         </Reveal>
 

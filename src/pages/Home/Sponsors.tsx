@@ -22,11 +22,13 @@ export default function Sponsors() {
         </label>
       </Reveal>
 
-      <SlideFromBottom>
-        <Container className="grid grid-cols-3 w-full justify-between items-center pt-24">
-          <img className="w-full object-contain" src={observatorul} />
+      <SlideFromBottom className="w-full">
+        <Container className="grid grid-cols-2 w-full justify-between items-center pt-24">
+          <img
+            className="w-full max-h-[100px] object-contain"
+            src={observatorul}
+          />
           <img className="w-full max-h-[150px] object-contain" src={cocos} />
-          <Envision width={"full"} />
         </Container>
       </SlideFromBottom>
     </div>

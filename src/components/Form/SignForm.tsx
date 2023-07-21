@@ -37,7 +37,7 @@ export default function SignForm() {
     surname: "",
     phone: "",
     details: "",
-    birthday: "",
+    birthday: formatedDate,
     invite_token: "",
     team_id: "",
   });
@@ -48,7 +48,7 @@ export default function SignForm() {
 
     try {
       const res = await axios.post(
-        "http://81.181.87.216:100/participants/add",
+        "https://api.code-envision.ro/participants/add",
         formData,
         {
           headers: {
@@ -56,8 +56,7 @@ export default function SignForm() {
           },
         }
       );
-
-      console.log(res.data);
+      window.location.reload();
     } catch (err: any) {
       console.log(err.response.data.error);
       setError(err.response.data.error);
@@ -82,7 +81,6 @@ export default function SignForm() {
     if (name == "birthday") {
       const values = value.split("-");
       value = `${values[0]}-${values[1]}-${values[2]}`;
-      console.log(value);
     }
 
     setFormData({ ...formData, [name]: value });
@@ -95,16 +93,20 @@ export default function SignForm() {
         className="flex flex-col gap-4 w-full mx-auto pt-24"
       >
         <div className="grid grid-cols-2 gap-4">
-          <FormInput title="Nume" onChange={handleChange} name="name" />
-          <FormInput title="Prenume" onChange={handleChange} name="surname" />
+          <FormInput title="Nume *" onChange={handleChange} name="name" />
+          <FormInput title="Prenume *" onChange={handleChange} name="surname" />
         </div>
         <FormInput
           type="email"
-          title="Email"
+          title="Email *"
           onChange={handleChange}
           name="email"
         />
-        <FormInput title="Numar Telefon" onChange={handleChange} name="phone" />
+        <FormInput
+          title="Numar Telefon *"
+          onChange={handleChange}
+          name="phone"
+        />
         <div className="grid grid-cols-2 gap-4 w-full">
           <FormInput
             title="Nume Echipa"
@@ -121,7 +123,7 @@ export default function SignForm() {
           type="date"
           title="Data Nasterii"
           name="birthday"
-          value={todayDate}
+          defaultValue={todayDate}
           onChange={handleChange}
         />
 
