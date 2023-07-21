@@ -44,7 +44,7 @@ const calendar = [
         title: "Deschiderea oficială",
       },
       { hour: "10:00", title: "Workshop 2 : To be announced" },
-      { hour: "12:00", title: "MASA 3" },
+      { hour: "12:00", title: "Masa 3" },
       { hour: "14:00", title: "Finalizarea subiectelor -- Deadline" },
       { hour: "14:30", title: "Inceperea sesiunii de jurizare" },
       { hour: "18:30", title: "Festivitatea de premiere" },
