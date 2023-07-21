@@ -23,7 +23,7 @@ export default function About() {
         </Reveal>
 
         <Reveal>
-          <p className="w-[95%] max-w-[55rem] text-black/50 text-justify pt-8">
+          <p className="w-[100%] text-black/60 indent-8 text-justify pt-8 text-xl">
             Envision se va desfășura în format fizic în orașul Ploiești, pe
             parcursul a două zile (30 septembrie , 1 octombrie). Competiția
             începe oficial pe 30 septembrie, ora 8 dimineața și va dura 30 de

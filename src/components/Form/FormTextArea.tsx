@@ -11,7 +11,7 @@ export default function FormTextArea({ title, ...props }: TextAreaProps) {
       <label>{title}</label>
       <textarea
         {...props}
-        className="rounded-md border-2 border-black/5 px-4 py-2 w-full min-h-[10em] hover:border-primary "
+        className="rounded-md border-2 border-black/5 bg-neutral-100 px-4 py-2 w-full min-h-[10em] hover:border-primary "
       ></textarea>
     </div>
   );

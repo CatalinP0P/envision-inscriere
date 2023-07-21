@@ -72,7 +72,7 @@ export default function Schedule() {
         </label>
       </Reveal>
 
-      <div className="flex flex-col gap-4 md:gap-8 pt-24">
+      <div className="flex flex-col gap-4 md:gap-8 pt-24 w-full">
         {calendar.map((schedule: ScheduleProps) => {
           return (
             <div key={Math.random() * 1000}>

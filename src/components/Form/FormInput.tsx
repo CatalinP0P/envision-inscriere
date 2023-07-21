@@ -11,7 +11,7 @@ export default function FormInput({ title, ...props }: InputProps) {
       <label>{title}</label>
       <input
         {...props}
-        className="rounded-md border-2 border-black/5  hover:border-primary px-4 py-2 w-full"
+        className="rounded-md border-2 border-black/5 bg-neutral-100 hover:border-primary px-4 py-2 w-full"
       ></input>
     </div>
   );
