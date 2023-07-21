@@ -152,12 +152,27 @@ export default function SignForm() {
         <div>
           <div
             className={
-              "w-fit " + (sending ? " opacity-60 pointer-events-none" : "")
+              "w-full grid md:grid-cols-2 gap-4 mt-4 " +
+              (sending ? " opacity-60 pointer-events-none" : "")
             }
           >
-            <Button variant="primary" type="submit" rounded={false}>
-              Inscrie-te
-            </Button>
+            <div className="flex flex-col gap-2">
+              <Button
+                variant="primary"
+                className="bg-primary text-white w-full py-3 rounded-lg hover:scale-105 transition-all"
+                type="submit"
+                rounded={false}
+              >
+                Inscrie-te
+              </Button>
+              <label>
+                Ai nelamuriri? Contacteaza-ne oricand, la telefon sau pe
+                whatsapp:{" "}
+                <a className="font-extrabold" href="tel:+40762542431">
+                  +40762542431
+                </a>
+              </label>
+            </div>
           </div>
         </div>
       </form>

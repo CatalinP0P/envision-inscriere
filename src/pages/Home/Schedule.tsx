@@ -58,7 +58,7 @@ const calendar = [
     content: [
       {
         hour: "10:00",
-        title: "Deschiderea oficială",
+        title: "Plecarea participantilor",
       },
     ],
   },
@@ -132,7 +132,7 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
         </div>
         <div className="absolute top-20 md:top-auto md:left-40 h-[2px] w-[85%] md:h-[75%] md:w-[2px] bg-primary my-4" />
         <div className="w-full flex flex-col gap-4">
-          <label className="mx-auto text-base :text-2xl font-bold ms-2 uppercase text-black/75">
+          <label className="mx-auto text-xl md:text-2xl font-bold ms-2 uppercase text-black/75">
             {schedule.title}
           </label>
           <ul className="w-full flex flex-col gap-2">

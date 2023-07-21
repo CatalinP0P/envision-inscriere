@@ -136,14 +136,20 @@ export default function Detalii() {
 
           {selectedTab == "participare" && (
             <Reveal color="white">
-              <div className="text-white text-justify pt-8  indent-8">
+              <div className="text-white text-justify pt-8 indent-8">
                 Participarea in competitia envision iti va putea oferi multe
                 indicii despre viitoarea ta cariera in domeniu, cat si o
                 experienta de neuitat alaturi de programatori, asemenea tie.
                 Pentru a te inscrie in competitie, trebuie doar sa completezi
                 formularul de mai jos si te vom contacta noi, in luna
-                septembrie. Ai nelamuriri? Contacteaza-ne oricand, la telefon
-                sau pe whatsapp: +40762542431.
+                septembrie.
+                <br />
+                Ai nelamuriri? Contacteaza-ne oricand, la telefon sau pe
+                whatsapp:{" "}
+                <a className="font-extrabold" href="tel:+40762542431">
+                  +40762542431
+                </a>
+                .
               </div>
             </Reveal>
           )}

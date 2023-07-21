@@ -41,14 +41,15 @@ export default function About() {
               limbajului ales.
             </p>
             <p>
-              Competitia envision va lua loc in ploiesti , in data de 30
+              Competitia envision va lua loc in Ploiesti , in data de 30
               septembrie. Cazarea este asigurata de organizatori. Timp de două
               zile vom trăi împreună emoțiile subiectelor, adrenalina
               cronometrului și pasiunea pentru programare.
             </p>
             <p>
               Vei putea participa la workshop-uri organizate de persoane
-              importante din domeniu .
+              importante din domeniu care iti vor oferi informatii pretioase
+              despre cariera cat si oportunitati de dezvoltare.
             </p>
             <div className="flex flex-col md:ms-8 md:flex-row gap-4 items-baseline w-full pt-8">
               <p className="text-black text-center w-full sm:w-fit">
