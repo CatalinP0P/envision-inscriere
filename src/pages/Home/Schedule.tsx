@@ -119,7 +119,7 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
           <label
             className={
               "text-primary text-2xl md:text-6xl font-semibold " +
-              (schedule.date.includes(">") ? " translate-x-[-35px] -me-8" : "")
+              (schedule.date.includes(">") ? " translate-x-[-20px] md:translate-x-[-28px] -me-8" : "")
             }
           >
             {schedule.date}
