@@ -8,10 +8,8 @@ import React, {
 import FormInput from "./FormInput";
 import Button from "../ui/Button";
 import FormTextArea from "./FormTextArea";
-import { loadavg } from "os";
 import Reveal from "../Animation/Reveal";
 import SlideFromBottom from "../Animation/SlideFromBottom";
-import { format } from "path";
 
 interface FormProps {
   email: string;
@@ -50,7 +48,7 @@ export default function SignForm() {
 
     try {
       const res = await axios.post(
-        "http://81.181.198.46:100/participants/add",
+        "http://81.181.87.216:100/participants/add",
         formData,
         {
           headers: {
@@ -134,22 +132,14 @@ export default function SignForm() {
         ></FormTextArea>
 
         <div className="flex flex-row gap-2 ms-1 text-xl items-start">
-          <input
-            required={true}
-            type="checkbox"
-            className="mt-[8px]"
-          />
+          <input required={true} type="checkbox" className="mt-[8px]" />
           <label>
             Sunt de acord cu prelucrarea datelor cu caracter personal
           </label>
         </div>
 
         <div className="flex flex-row gap-2 ms-1 text-xl items-start">
-          <input
-            required={true}
-            type="checkbox"
-            className="mt-[8px]"
-          />
+          <input required={true} type="checkbox" className="mt-[8px]" />
           <label>Am citit regulamentul competitiei</label>
         </div>
         {error && (

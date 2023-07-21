@@ -31,14 +31,11 @@ export default function Hero() {
         </Reveal>
         <Reveal color="white">
           <label className="text-white/75 font-semibold">
-            Reprezintă un eveniment de tehnologie adresat tinerilor din toată
-            tara.
+            Solutii inteligente pentru probleme comunitare
           </label>
           <div className="h-[2px] w-[6rem] my-4 bg-white mx-auto" />
           <p className="text-white/50 font-semibold">
-            Competiția ENVISION se desfășoară sub forma unui maraton de
-            programare în care concurenții vor dezvolta o aplicație după o
-            cerință dată.
+            Maratonul de programare pentru tinerii din toata tara.
           </p>
         </Reveal>
         <Reveal color="white">

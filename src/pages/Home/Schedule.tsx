@@ -87,7 +87,7 @@ export default function Schedule() {
 
 const ListItem = ({ hour, title }: { hour: string; title: string }) => {
   return (
-    <li className="flex flex-row gap-4 text-start items-start w-full justify-start ms-2">
+    <li className="flex flex-row gap-4 text-start items-baseline w-full justify-start ms-2">
       <span className="bg-primary px-2 w-fit h-fit py-1 text-white rounded-md">
         {hour}
       </span>

@@ -24,9 +24,9 @@ export default function Home() {
         <Awards />
       </div>
       <SignUp />
-      <div className="w-full bg-black/5">
+      {/* <div className="w-full bg-black/5">
         <Organizators />
-      </div>
+      </div> */}
       <Sponsors />
     </div>
   );

@@ -40,7 +40,7 @@ export default function Detalii() {
           </label>
         </Reveal>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-4 gap-y-16  pt-24 whitespace-nowrap">
+        <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16  pt-24 whitespace-nowrap">
           <SlideFromBottom>
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
@@ -89,7 +89,7 @@ export default function Detalii() {
             </div>
           </SlideFromBottom>
 
-          <SlideFromBottom>
+          <SlideFromBottom className="col-span-2 lg:col-span-1">
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
               <div
                 className={
@@ -111,29 +111,6 @@ export default function Detalii() {
               <label>Proba blitzkrieg</label>
             </div>
           </SlideFromBottom>
-
-          <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
-              <div
-                className={
-                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
-                }
-                onClick={() => selectTab("jurizare")}
-              >
-                <TriangleSVG
-                  width={64}
-                  height={64}
-                  fill="white"
-                  className={
-                    " left-[50%] translate-x-[-50%] top-[-64px] " +
-                    (selectedTab == "jurizare" ? " absolute" : " hidden")
-                  }
-                />
-                <RankingSVG width={"full"} height={"full"} />
-              </div>
-              <label>jurizare</label>
-            </div>
-          </SlideFromBottom>
         </div>
 
         <div
@@ -147,10 +124,12 @@ export default function Detalii() {
               <div className="text-white text-justify indent-8">
                 Envision este dorința de a uni programatorii zilei de mâine, a
                 crea perspective noi, forma noi echipe și programa împreună,
-                spre un viitor mai bun. Timp de două zile vom trăi împreună
-                emoțiile subiectelor, adrenalina cronometrului și pasiunea
-                pentru programare. Cei ce se vor ridica printre colegi cu cele
-                mai bune aplicații vor fi răsplătiți cu premii.
+                spre un viitor mai bun.Credem în forța comunicării și a
+                comunității. Chiar dacă este o activitate prin excelență
+                individuală, programarea capătă valori adeseori neimaginate
+                atunci când se face în context colectiv. Apar provocări și
+                necesități care duc la crearea de colaborări și alianțe. Se
+                creează comunități.
               </div>
             </Reveal>
           )}
@@ -158,31 +137,13 @@ export default function Detalii() {
           {selectedTab == "participare" && (
             <Reveal color="white">
               <div className="text-white text-justify pt-8  indent-8">
-                Participarea este individuala sau in echipe a cate 2 concurenti.
-                Fiecare concurent va putea lua parte intr-o singura echipa.
-                Participarea la competitia envision este conditionata de
-                urmatoarele:
-                <div className="flex flex-col gap-1 indent-8">
-                  <label>
-                    1) Inscrierea pe platforma code-envision.ro pana in data de
-                    25 septembrie
-                  </label>
-                  <label>
-                    2) Prezentarea la locul de desfasurare al competitiei.{" "}
-                  </label>
-                  <label>
-                    3) Completarea acordului parental cu privire la : deplasare,
-                    cazare, masa.
-                  </label>
-                  <label>
-                    4) Completarea acordului cu privire la prelucrarea datelor
-                    cu caracter personal in cadrul competitiei cat si in afara
-                    ei.
-                  </label>
-                </div>
-                Participarea va fi confirmata in momentul in care concurentii
-                vor fi contactati de catre organizatori, in saptamana 20-24
-                septembrie.
+                Participarea in competitia envision iti va putea oferi multe
+                indicii despre viitoarea ta cariera in domeniu, cat si o
+                experienta de neuitat alaturi de programatori, asemenea tie.
+                Pentru a te inscrie in competitie, trebuie doar sa completezi
+                formularul de mai jos si te vom contacta noi, in luna
+                septembrie. Ai nelamuriri? Contacteaza-ne oricand, la telefon
+                sau pe whatsapp: +40762542431.
               </div>
             </Reveal>
           )}
@@ -190,33 +151,13 @@ export default function Detalii() {
           {selectedTab == "proba" && (
             <Reveal color="white">
               <div className="text-white text-justify pt-8 indent-8">
-                Subiectul de concurs va fi distribuit tututor participantilor in
-                momentul deschiderii oficiale a competitiei. Cerinta va fi
-                efectuata de catre concurenti in orice limbaj le este la
-                indemana, cu orice tehnologie. Singurul aspect important din
-                acest punct de vedere este cunoasterea temeinica a
-                tehnologiei/limbajulii ales. Concurentii vor avea la dispozitie
-                24 de ore pentru implementarea cerintei. Participantii au libera
-                alegere pentru determinarea perioadelor de lucru, odihna,
-                distractie, s.a.m.d. Totodata , le revine completa raspundere
-                asupra starii de sanatate generata de lipsa odihnei.
-              </div>
-            </Reveal>
-          )}
-
-          {selectedTab == "jurizare" && (
-            <Reveal color="white">
-              <div className="text-white text-justify pt-8 indent-8">
-                Criteriile de jurizare pentru proiectele realizate vor fi
-                distribuite impreuna cu subiectele. Proiectele care se vor
-                juriza vor fi prezentate de catre realizatori comisiei de
-                jurizare , organizatorilor si bineinteles, intregului public
-                interesat. Vor participa la jurizare doar proiectele care
-                respecta conditiile minime de jurizare. Fiecare membru al
-                juriului acorda un punctaj , 0-100, conform baremului de
-                corectare. Scorul final al unui proiect reprezinta media
-                aritmetica a tuturor scorurilor din juriu. Nu se admit
-                contestatii sau re-evaluari ale proiectelor.
+                Apelăm la resursele pasionaților, profesioniștilor, sau ale
+                comunităților de programatori, pentru identificarea într-un timp
+                foarte scurt a unei soluții informatice la principala problemă
+                care preocupă comunitatea în care organizăm maratonul. Știm că
+                visul oricărui programator este să-și vadă la lucru, în mod
+                concret, codul. Creeam provocari pentru identificarea de soluții
+                concrete, cu aplicabilitate imediată.
               </div>
             </Reveal>
           )}
