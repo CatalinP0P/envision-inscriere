@@ -40,7 +40,7 @@ export default function Detalii() {
           </label>
         </Reveal>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16 pt-24 whitespace-nowrap">
+        <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16 pt-16 whitespace-nowrap">
           <SlideFromBottom>
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
