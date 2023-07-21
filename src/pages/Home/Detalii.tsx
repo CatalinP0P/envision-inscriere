@@ -40,9 +40,9 @@ export default function Detalii() {
           </label>
         </Reveal>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16  pt-24 whitespace-nowrap">
+        <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16 pt-24 whitespace-nowrap">
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
@@ -67,7 +67,7 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
@@ -90,7 +90,7 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom className="col-span-2 lg:col-span-1">
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-base lg:text-xl">
+            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "

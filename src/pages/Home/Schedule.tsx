@@ -118,19 +118,19 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
         <div className="flex flex-col gap-2 items-center">
           <label
             className={
-              "text-primary text-4xl md:text-6xl font-semibold " +
+              "text-primary text-2xl md:text-6xl font-semibold " +
               (schedule.date.includes(">") ? " translate-x-[-35px] -me-8" : "")
             }
           >
             {schedule.date}
           </label>
-          <label className="text-lg inline-block text-primary font-bold">
+          <label className="text-base md:text-lg inline-block text-primary font-bold">
             {schedule.month}
           </label>
         </div>
-        <div className="absolute left-28 md:left-40 h-[75%] w-[2px] bg-primary my-4" />
+        <div className="absolute left-36 md:left-40 h-[75%] w-[2px] bg-primary my-4" />
         <div className="w-full flex flex-col gap-4">
-          <label className="mx-auto text-2xl font-bold ms-2 uppercase text-black/75">
+          <label className="mx-auto text-base :text-2xl font-bold ms-2 uppercase text-black/75">
             {schedule.title}
           </label>
           <ul className="w-full flex flex-col gap-2">
