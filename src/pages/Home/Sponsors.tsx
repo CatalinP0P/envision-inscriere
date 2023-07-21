@@ -12,13 +12,13 @@ export default function Sponsors() {
     <div className="w-full py-24 flex flex-col items-center text-center">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
-          multimim observatorul prahovean si la cocos
+          sustin performanta
         </label>
       </Reveal>
 
       <Reveal>
         <label className="text-4xl lg:text-6xl font-light pb-4">
-          Sponsori pentru Eveniment
+          Sponsorii evenimentului
         </label>
       </Reveal>
 

@@ -8,17 +8,17 @@ export default function Awards() {
     <div className="flex flex-col items-center py-24 text-center relative">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
-          rasplatirea eforturilor si talentului
+          rasplatirea eforturilor
         </label>
       </Reveal>
 
       <Reveal>
         <label className="text-4xl lg:text-6xl font-light pb-4">
-          Premii pentru castigatori
+          Premiile oferite
         </label>
       </Reveal>
 
-      <SlideFromBottom className="w-full" >
+      <SlideFromBottom className="w-full">
         <img src={podiumImg} className="w-[95%] max-w-[40rem] mx-auto pt-32" />
       </SlideFromBottom>
     </div>
