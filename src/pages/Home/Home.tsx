@@ -27,7 +27,9 @@ export default function Home() {
       {/* <div className="w-full bg-black/5">
         <Organizators />
       </div> */}
-      <Sponsors />
+      <div className="bg-black/5" >
+        <Sponsors />
+      </div>
     </div>
   );
 }
