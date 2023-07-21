@@ -19,7 +19,7 @@ export default function Awards() {
       </Reveal>
 
       <SlideFromBottom className="w-full">
-        <img src={podiumImg} className="w-[95%] max-w-[40rem] mx-auto pt-16" />
+        <img src={podiumImg} className="w-[95%] max-w-[30rem] mx-auto pt-16" />
       </SlideFromBottom>
     </div>
   );

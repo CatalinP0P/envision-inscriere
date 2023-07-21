@@ -3,13 +3,9 @@ import Container from "../../components/ui/Container";
 import backgroundImage from "../../assets/coding2.jpg";
 import Reveal from "../../components/Animation/Reveal";
 
-import { ReactComponent as IdeaSVG } from "../../assets/idea.svg";
-import { ReactComponent as WorkShopSVG } from "../../assets/workshop.svg";
-import { ReactComponent as RankingSVG } from "../../assets/ranking.svg";
-import { ReactComponent as CodingSVG } from "../../assets/coding.svg";
+import { ReactComponent as MountainSVG } from "../../assets/mountain.svg"
+import { ReactComponent as TargetSVG } from "../../assets/target.svg";
 import { ReactComponent as TriangleSVG } from "../../assets/triangle.svg";
-
-import { ReactComponent as HammerSVG } from "../../assets/hammer.svg";
 import { ReactComponent as PeopleSVG } from "../../assets/people.svg";
 
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
@@ -58,7 +54,7 @@ export default function Detalii() {
                     (selectedTab == "cine-suntem" ? " absolute" : " hidden")
                   }
                 />
-                <IdeaSVG width={"full"} height={"full"} />
+                <PeopleSVG width={"full"} height={"full"} />
               </div>
               <label>Cine suntem?</label>
             </div>
@@ -68,7 +64,7 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
+                  "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
                 }
                 onClick={() => selectTab("misiunea-noastra")}
               >
@@ -83,7 +79,7 @@ export default function Detalii() {
                       : " hidden")
                   }
                 />
-                <PeopleSVG width={"full"} height={"full"} />
+                <MountainSVG width={"full"} height={"full"} />
               </div>
               <label>Care este misiunea noastră?</label>
             </div>
@@ -93,7 +89,7 @@ export default function Detalii() {
             <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
               <div
                 className={
-                  "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
+                  "w-[128px] h-[128px] cursor-pointer relative p-6 rounded-full bg-white active:bg-white/60 "
                 }
                 onClick={() => selectTab("obiectiv")}
               >
@@ -106,7 +102,7 @@ export default function Detalii() {
                     (selectedTab == "obiectiv" ? " absolute" : " hidden")
                   }
                 />
-                <CodingSVG width={"full"} height={"full"} />
+                <TargetSVG width={"full"} height={"full"} />
               </div>
               <label>Care este obiectivul nostru?</label>
             </div>
