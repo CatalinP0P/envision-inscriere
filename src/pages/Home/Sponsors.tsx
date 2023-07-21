@@ -23,7 +23,7 @@ export default function Sponsors() {
       </Reveal>
 
       <SlideFromBottom>
-        <Container className="grid grid-cols-3 justify-between items-center pt-24">
+        <Container className="grid grid-cols-3 w-full justify-between items-center pt-24">
           <img className="w-full object-contain" src={observatorul} />
           <img className="w-full max-h-[150px] object-contain" src={cocos} />
           <Envision width={"full"} />

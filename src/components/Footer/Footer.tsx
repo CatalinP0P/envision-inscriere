@@ -19,7 +19,7 @@ export default function Footer() {
           <Logo className="w-[75%] mx-auto md:mx-0 h-fit translate-y-[-20%]" />
         </div>
         <div className="w-full flex flex-col gap-2 items-center text-white text-lg">
-          <div className="w-fit flex flex-col gap-2 items-start text-start first-letter:uppercase">
+          <div className="w-fit flex flex-col gap-2 items-start text-start first-letter:uppercase [&>*]:first-letter:uppercase">
             <a className="cursor-pointer">termeni si conditii</a>
             <a className="cursor-pointer">accord GDPR</a>
             <a className="cursor-pointer">despre noi</a>
@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="col-span-full text-white/50 text-center md:ps-6 md:text-start">
+        <div className="col-span-full text-white/80 text-center md:ps-6 md:text-start">
           <label>© All Rights Reserved {new Date().getFullYear()}</label>
         </div>
       </Container>

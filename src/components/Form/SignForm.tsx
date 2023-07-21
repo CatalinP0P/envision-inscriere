@@ -94,7 +94,7 @@ export default function SignForm() {
     <SlideFromBottom className="w-full">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 w-full mx-auto pt-24 max-w-[1000px]"
+        className="flex flex-col gap-4 w-full mx-auto pt-24"
       >
         <div className="grid grid-cols-2 gap-4">
           <FormInput title="Nume" onChange={handleChange} name="name" />
