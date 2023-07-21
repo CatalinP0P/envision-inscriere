@@ -3,7 +3,7 @@ import Container from "../../components/ui/Container";
 import backgroundImage from "../../assets/coding2.jpg";
 import Reveal from "../../components/Animation/Reveal";
 
-import { ReactComponent as MountainSVG } from "../../assets/mountain.svg"
+import { ReactComponent as MountainSVG } from "../../assets/mountain.svg";
 import { ReactComponent as TargetSVG } from "../../assets/target.svg";
 import { ReactComponent as TriangleSVG } from "../../assets/triangle.svg";
 import { ReactComponent as PeopleSVG } from "../../assets/people.svg";
@@ -11,7 +11,7 @@ import { ReactComponent as PeopleSVG } from "../../assets/people.svg";
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Detalii() {
-  const [selectedTab, selectTab] = useState("experienta-envision");
+  const [selectedTab, selectTab] = useState("cine-suntem");
 
   return (
     <div className="w-full relative transition-all">
@@ -23,7 +23,7 @@ export default function Detalii() {
       <Container className="flex flex-col py-16 items-center text-white">
         <Reveal color="white">
           <label className="font-bold uppercase text-md text-white">
-            experienta, participare, proba
+            cine suntem si ce facem
           </label>
         </Reveal>
 
@@ -38,7 +38,12 @@ export default function Detalii() {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-4 gap-y-16 pt-16 whitespace-nowrap">
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
+            <div
+              className={
+                "w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm " +
+                (selectedTab == "cine-suntem" ? "" : " opacity-60")
+              }
+            >
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
@@ -61,7 +66,12 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom>
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
+            <div
+              className={
+                "w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm " +
+                (selectedTab == "misiunea-noastra" ? "" : " opacity-60")
+              }
+            >
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
@@ -86,7 +96,12 @@ export default function Detalii() {
           </SlideFromBottom>
 
           <SlideFromBottom className="col-span-2 lg:col-span-1">
-            <div className="w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm">
+            <div
+              className={
+                "w-full h-full flex flex-col gap-4 items-center font-bold uppercase text-xs md:text-sm " +
+                (selectedTab == "obiectiv" ? "" : " opacity-60")
+              }
+            >
               <div
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-6 rounded-full bg-white active:bg-white/60 "

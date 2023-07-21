@@ -9,7 +9,7 @@ import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Sponsors() {
   return (
-    <div className="w-full py-24 flex flex-col items-center text-center">
+    <div className="w-full py-16 flex flex-col items-center text-center">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
           sustin performanta
@@ -23,7 +23,7 @@ export default function Sponsors() {
       </Reveal>
 
       <SlideFromBottom className="w-full">
-        <Container className="grid grid-cols-2 w-full justify-between items-center pt-8">
+        <Container className="grid grid-cols-2 w-full justify-between items-center pt-6">
           <img
             className="w-full max-h-[100px] object-contain"
             src={observatorul}
