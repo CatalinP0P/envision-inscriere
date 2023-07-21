@@ -5,7 +5,7 @@ import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Awards() {
   return (
-    <div className="flex flex-col items-center py-24 text-center relative">
+    <div className="flex flex-col items-center py-16 text-center relative">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
           rasplatirea eforturilor

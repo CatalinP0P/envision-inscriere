@@ -68,7 +68,7 @@ const calendar = [
 export default function Schedule() {
   return (
     <Container
-      className="py-24 flex flex-col items-center
+      className="py-16 flex flex-col items-center
     "
     >
       <Reveal>
@@ -115,7 +115,7 @@ interface ScheduleProps {
 const ScheduleCard = ({ schedule }: { schedule: any }) => {
   return (
     <SlideFromBottom>
-      <div className="relative flex flex-col md:flex-row py-4 px-8 w-full h-full items-start md:items-center shadow-lg gap-12 md:gap-24">
+      <div className="relative flex flex-col md:flex-row py-4 px-8 w-full h-full items-start md:items-center shadow-lg gap-12 md:gap-16">
         <div className="flex flex-col gap-2 md:items-center">
           <label
             className={

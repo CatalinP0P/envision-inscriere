@@ -24,7 +24,7 @@ export default function Detalii() {
         src={backgroundImage}
       />
       <div className="absolute left-0 top-0 w-full h-full z-[-1] bg-primary/95 transition-all" />
-      <Container className="flex flex-col py-24 items-center text-white">
+      <Container className="flex flex-col py-16 items-center text-white">
         <Reveal color="white">
           <label className="font-bold uppercase text-md text-white">
             experienta, participare, proba
@@ -47,7 +47,7 @@ export default function Detalii() {
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-4 rounded-full bg-white active:bg-white/60 "
                 }
-                onClick={() => selectTab("experienta-envision")}
+                onClick={() => selectTab("cine-suntem")}
               >
                 <TriangleSVG
                   width={64}
@@ -55,14 +55,12 @@ export default function Detalii() {
                   fill="white"
                   className={
                     " left-[50%] translate-x-[-50%] top-[-64px] " +
-                    (selectedTab == "experienta-envision"
-                      ? " absolute"
-                      : " hidden")
+                    (selectedTab == "cine-suntem" ? " absolute" : " hidden")
                   }
                 />
                 <IdeaSVG width={"full"} height={"full"} />
               </div>
-              <label>experienta envision</label>
+              <label>Cine suntem?</label>
             </div>
           </SlideFromBottom>
 
@@ -72,7 +70,7 @@ export default function Detalii() {
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
                 }
-                onClick={() => selectTab("participare")}
+                onClick={() => selectTab("misiunea-noastra")}
               >
                 <TriangleSVG
                   width={64}
@@ -80,12 +78,14 @@ export default function Detalii() {
                   fill="white"
                   className={
                     " left-[50%] translate-x-[-50%] top-[-64px] " +
-                    (selectedTab == "participare" ? " absolute" : " hidden")
+                    (selectedTab == "misiunea-noastra"
+                      ? " absolute"
+                      : " hidden")
                   }
                 />
                 <PeopleSVG width={"full"} height={"full"} />
               </div>
-              <label>Participarea in competitie</label>
+              <label>Care este misiunea noastră?</label>
             </div>
           </SlideFromBottom>
 
@@ -95,7 +95,7 @@ export default function Detalii() {
                 className={
                   "w-[128px] h-[128px] cursor-pointer relative p-8 rounded-full bg-white active:bg-white/60 "
                 }
-                onClick={() => selectTab("proba")}
+                onClick={() => selectTab("obiectiv")}
               >
                 <TriangleSVG
                   width={64}
@@ -103,12 +103,12 @@ export default function Detalii() {
                   fill="white"
                   className={
                     " left-[50%] translate-x-[-50%] top-[-64px] " +
-                    (selectedTab == "proba" ? " absolute" : " hidden")
+                    (selectedTab == "obiectiv" ? " absolute" : " hidden")
                   }
                 />
                 <CodingSVG width={"full"} height={"full"} />
               </div>
-              <label>Subiectul competitiei</label>
+              <label>Care este obiectivul nostru?</label>
             </div>
           </SlideFromBottom>
         </div>
@@ -119,51 +119,47 @@ export default function Detalii() {
             (selectedTab != "" ? "min-h-[200px]" : "min-h-0")
           }
         >
-          {selectedTab == "experienta-envision" && (
+          {selectedTab == "cine-suntem" && (
             <Reveal color="white">
-              <div className="text-white text-justify indent-8">
-                Envision este dorința de a uni programatorii zilei de mâine, a
-                crea perspective noi, forma noi echipe și programa împreună,
-                spre un viitor mai bun.Credem în forța comunicării și a
-                comunității. Chiar dacă este o activitate prin excelență
-                individuală, programarea capătă valori adeseori neimaginate
-                atunci când se face în context colectiv. Apar provocări și
-                necesități care duc la crearea de colaborări și alianțe. Se
-                creează comunități.
-              </div>
+              <p className="text-white text-justify indent-8">
+                Un grup de inițiativă format din persoane cu experiență în
+                diferite domenii, preocupați de identificarea de soluții
+                inteligente pentru rezolvarea problemelor comunitare.
+              </p>
             </Reveal>
           )}
 
-          {selectedTab == "participare" && (
+          {selectedTab == "misiunea-noastra" && (
             <Reveal color="white">
-              <div className="text-white text-justify pt-8 indent-8">
-                Participarea in competitia envision iti va putea oferi multe
-                indicii despre viitoarea ta cariera in domeniu, cat si o
-                experienta de neuitat alaturi de programatori, asemenea tie.
-                Pentru a te inscrie in competitie, trebuie doar sa completezi
-                formularul de mai jos si te vom contacta noi, in luna
-                septembrie.
-                <br />
-                Ai nelamuriri? Contacteaza-ne oricand, la telefon sau pe
-                whatsapp:{" "}
-                <a className="font-extrabold" href="tel:+40762542431">
-                  +40762542431
-                </a>
-                .
-              </div>
+              <p className="text-white text-justify pt-8 indent-8">
+                Credem în forța comunicării și a comunității. Chiar dacă este o
+                activitate prin excelență individuală, programarea capătă valori
+                adeseori neimaginate atunci când se face în context colectiv.
+                Apar provocări și necesități care duc la crearea de colaborări
+                și alianțe. Se creează comunități. Viziunea Code Envision este
+                aceea de a fi un promotor al comunicării între programatori și
+                al creării de legături firești, naturale între indivizi și
+                comunități.
+              </p>
             </Reveal>
           )}
 
-          {selectedTab == "proba" && (
+          {selectedTab == "obiectiv" && (
             <Reveal color="white">
               <div className="text-white text-justify pt-8 indent-8">
                 Apelăm la resursele pasionaților, profesioniștilor, sau ale
                 comunităților de programatori, pentru identificarea într-un timp
                 foarte scurt a unei soluții informatice la principala problemă
-                care preocupă comunitatea în care organizăm maratonul. Știm că
-                visul oricărui programator este să-și vadă la lucru, în mod
-                concret, codul. Creeam provocari pentru identificarea de soluții
-                concrete, cu aplicabilitate imediată.
+                care preocupă comunitatea în care organizăm maratonul. Soluția
+                va fi pusă în mod gratuit la dispoziția comunității gazdă care
+                va fi sprijinită și pentru implementarea ei. Vrem ca
+                participanții să cunoască valorile reale ale informaticii, motiv
+                pentru care organizăm întâlniri/interacțiuni/workshop-uri cu
+                personalități și oameni de succes din informatică și domeniile
+                conexe. Știm că visul oricărui programator este să-și vadă la
+                lucru, în mod concret, codul. Facem provocări ”blitz” pentru
+                identificarea de soluții concrete, cu aplicabilitate imediată,
+                la probleme ridicate de sponsori.
               </div>
             </Reveal>
           )}

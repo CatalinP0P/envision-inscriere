@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="relative">
       <Container
-        className="flex flex-col items-center py-24 text-center relative"
+        className="flex flex-col items-center py-16 text-center relative"
         id="details"
       >
         <Image className="block absolute right-4 left-auto bottom-0 md:top-auto min-w-[20rem] w-[30%] max-w-[400px] h-fit z-[25] opacity-75"></Image>
