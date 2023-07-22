@@ -11,12 +11,16 @@ import SignUp from "./SignUp";
 import PersonCard from "../../components/ui/PersonCard";
 import Organizators from "./Organizators";
 import Awards from "./Awards";
+import SponsorSlider from "../../components/ui/SponsorSlider";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <About />
+      <SponsorSlider />
+      <div className="bg-neutral-100">
+        <About />
+      </div>
       <Detalii />
       <Schedule />
       <div className="w-full bg-black/5">
