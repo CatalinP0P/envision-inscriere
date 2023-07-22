@@ -10,6 +10,7 @@ import Button from "../ui/Button";
 import FormTextArea from "./FormTextArea";
 import Reveal from "../Animation/Reveal";
 import SlideFromBottom from "../Animation/SlideFromBottom";
+import { ToastContainer, toast } from "react-toastify";
 
 interface FormProps {
   email: string;
@@ -26,6 +27,8 @@ export default function SignForm() {
   const [error, setError] = useState("");
   const [sending, setSending] = useState(false);
   const [alertShown, setAlertStatus] = useState<boolean>(false);
+
+  const formRef = useRef(null);
 
   var date = new Date();
   var formatedDate = date.toISOString().split("T")[0];
@@ -56,12 +59,24 @@ export default function SignForm() {
           },
         }
       );
-      window.location.reload();
+
+      setError("");
+      toast.success("Te-ai inscris! Te asteptam 😁", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+      const form: any = formRef.current;
+      form.reset();
     } catch (err: any) {
       console.log(err.response.data.error);
       setError(err.response.data.error);
     }
-
     setSending(false);
   };
 
@@ -90,6 +105,7 @@ export default function SignForm() {
     <SlideFromBottom className="w-full">
       <form
         onSubmit={handleSubmit}
+        ref={formRef}
         className="flex flex-col gap-4 w-full mx-auto pt-24"
       >
         <div className="grid grid-cols-2 gap-4">
@@ -123,7 +139,7 @@ export default function SignForm() {
           type="date"
           title="Data Nasterii"
           name="birthday"
-          defaultValue={todayDate}
+          defaultValue={formatedDate}
           onChange={handleChange}
         />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import Container from "../../components/ui/Container";
 import Reveal from "../../components/Animation/Reveal";
 import Hero from "./Hero";
@@ -12,6 +13,7 @@ import PersonCard from "../../components/ui/PersonCard";
 import Organizators from "./Organizators";
 import Awards from "./Awards";
 import SponsorSlider from "../../components/ui/SponsorSlider";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   return (
@@ -33,6 +35,18 @@ export default function Home() {
       <div className="bg-black/5">
         <Sponsors />
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 }
