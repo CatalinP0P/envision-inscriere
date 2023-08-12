@@ -11,6 +11,7 @@ import FormTextArea from "./FormTextArea";
 import Reveal from "../Animation/Reveal";
 import SlideFromBottom from "../Animation/SlideFromBottom";
 import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 interface FormProps {
   email: string;
@@ -29,6 +30,8 @@ export default function SignForm() {
   const [alertShown, setAlertStatus] = useState<boolean>(false);
 
   const formRef = useRef(null);
+
+  const navigate = useNavigate();
 
   var date = new Date();
   var formatedDate = date.toISOString().split("T")[0];
@@ -61,16 +64,9 @@ export default function SignForm() {
       );
 
       setError("");
-      toast.success("Te-ai inscris! Te asteptam 😁", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        progress: undefined,
-        theme: "dark",
-      });
+      setTimeout(() => {
+        navigate("/confirm");
+      }, 250);
       const form: any = formRef.current;
       form.reset();
     } catch (err: any) {
@@ -84,7 +80,7 @@ export default function SignForm() {
     HTMLInputElement | HTMLTextAreaElement
   > = (e: ChangeEvent<any>) => {
     var { name, value } = e.target;
-    if (name == "team_id") {
+    if (name === "team_id") {
       if (!alertShown) {
         alert(
           "Daca vrei sa inscrii o echipa, toti membrii se vor inscrie cu acelasi nume de echipa"
@@ -93,7 +89,7 @@ export default function SignForm() {
       }
     }
 
-    if (name == "birthday") {
+    if (name === "birthday") {
       const values = value.split("-");
       value = `${values[0]}-${values[1]}-${values[2]}`;
     }
