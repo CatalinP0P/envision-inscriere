@@ -12,7 +12,7 @@ export default function Confirm() {
           Te-ai inscris cu succes!
         </label>
         <label className="text-base lg:text-lg opacity-80 ms-2">
-          Esti inscris la hackatonul nostu, te asteptam 😁
+          Esti inscris la hackathonul nostu, te asteptam 😁
         </label>
         <div className="text-base w-fit mt-4">
           <Button onClick={() => navigate("/")} variant="primary">
