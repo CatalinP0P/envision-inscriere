@@ -27,19 +27,19 @@ export default function Confirm() {
             <div className="text-6xl lg:text-8xl">
               <ArticleIcon fontSize="inherit" />
             </div>
-            <label>Terms & Conditions</label>
+            <label>Regulament Concurs</label>
           </div>
           <div className="flex flex-col gap-2  items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all">
             <div className="text-6xl lg:text-8xl">
               <ArticleIcon fontSize="inherit" />
             </div>
-            <label>GDPR</label>
+            <label>Detalii Subiect</label>
           </div>
           <div className="flex flex-col gap-2 items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all">
             <div className="text-6xl lg:text-8xl">
               <ArticleIcon fontSize="inherit" />
             </div>
-            <label>Jurizare</label>
+            <label>Politica Confidentialitate</label>
           </div>
         </Container>
       </div>
