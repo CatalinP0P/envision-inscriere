@@ -80,14 +80,6 @@ export default function SignForm() {
     HTMLInputElement | HTMLTextAreaElement
   > = (e: ChangeEvent<any>) => {
     var { name, value } = e.target;
-    if (name === "team_id") {
-      if (!alertShown) {
-        alert(
-          "Daca vrei sa inscrii o echipa, toti membrii se vor inscrie cu acelasi nume de echipa"
-        );
-        setAlertStatus(true);
-      }
-    }
 
     if (name === "birthday") {
       const values = value.split("-");
@@ -119,18 +111,19 @@ export default function SignForm() {
           onChange={handleChange}
           name="phone"
         />
-        <div className="grid grid-cols-2 gap-4 w-full">
-          <FormInput
-            title="Nume Echipa"
-            onChange={handleChange}
-            name="team_id"
-          />
-          <FormInput
-            title="Token invitatie"
-            onChange={handleChange}
-            name="invite_token"
-          />
-        </div>
+        <FormInput
+          title="Nume Echipa"
+          onChange={handleChange}
+          onFocus={() => {
+            if (!alertShown) {
+              alert(
+                "Daca vrei sa inscrii o echipa, toti membrii se vor inscrie cu acelasi nume de echipa"
+              );
+              setAlertStatus(true);
+            }
+          }}
+          name="team_id"
+        />
         <FormInput
           type="date"
           title="Data Nasterii"
