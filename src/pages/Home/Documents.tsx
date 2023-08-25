@@ -14,7 +14,7 @@ export default function Documents() {
         <div className="text-6xl lg:text-8xl">
           <ArticleIcon fontSize="inherit" />
         </div>
-        <label>Termeni si Conditii</label>
+        <label>Termeni şi Condiţii</label>
       </a>
       <a
         target="_blank"
