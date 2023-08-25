@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 export default function Confirm() {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-grow flex-col items-center gap-24 justify-between">
-      <Container className="text-start flex flex-col">
-        <label className="text-4xl lg:text-6xl text-primary font-semibold pt-24 lg:pt-36">
+    <div className="flex flex-grow flex-col items-center gap-24 justify-center">
+      <Container className="text-start flex flex-col py-auto ">
+        <label className="text-4xl lg:text-6xl text-primary font-semibold ">
           Te-ai inscris cu succes!
         </label>
         <label className="text-base lg:text-lg opacity-80 ms-2">

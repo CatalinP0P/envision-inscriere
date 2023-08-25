@@ -23,7 +23,9 @@ export default function Home() {
       <SponsorSlider />
       <About />
       <Detalii />
-      <Schedule />
+      <div className="bg-neutral-100">
+        <Schedule />
+      </div>
       <Awards />
       <div className="bg-neutral-100">
         <Documents />

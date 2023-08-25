@@ -115,7 +115,7 @@ interface ScheduleProps {
 const ScheduleCard = ({ schedule }: { schedule: any }) => {
   return (
     <SlideFromBottom>
-      <div className="relative flex flex-col md:flex-row py-4 px-8 w-full h-full items-start md:items-center shadow-lg gap-12 md:gap-16">
+      <div className="bg-white relative flex flex-col md:flex-row py-4 px-8 w-full h-full items-start md:items-center shadow-lg gap-12 md:gap-16">
         <div className="flex flex-col gap-2 md:items-center">
           <label
             className={
@@ -131,7 +131,7 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
             {schedule.month}
           </label>
         </div>
-        <div className="absolute top-20 md:top-auto md:left-40 h-[2px] w-[85%] md:h-[75%] md:w-[2px] bg-primary my-4" />
+        <div className="absolute top-20 md:top-auto md:left-40 h-[2px] w-[85%] md:h-[75%] md:w-[2px] s-primary my-4" />
         <div className="w-full flex flex-col gap-4">
           <label className="mx-auto text-xl md:text-2xl font-bold ms-2 uppercase text-black/75">
             {schedule.title}
