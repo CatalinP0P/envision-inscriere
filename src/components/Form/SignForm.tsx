@@ -8,9 +8,7 @@ import React, {
 import FormInput from "./FormInput";
 import Button from "../ui/Button";
 import FormTextArea from "./FormTextArea";
-import Reveal from "../Animation/Reveal";
 import SlideFromBottom from "../Animation/SlideFromBottom";
-import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 interface FormProps {

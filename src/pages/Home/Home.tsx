@@ -14,19 +14,19 @@ import Organizators from "./Organizators";
 import Awards from "./Awards";
 import SponsorSlider from "../../components/ui/SponsorSlider";
 import "react-toastify/dist/ReactToastify.css";
+import Documents from "./Documents";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <SponsorSlider />
-      <div className="bg-neutral-100">
-        <About />
-      </div>
+      <About />
       <Detalii />
       <Schedule />
-      <div className="w-full bg-black/5">
-        <Awards />
+      <Awards />
+      <div className="bg-neutral-100">
+        <Documents />
       </div>
       <SignUp />
       {/* <div className="w-full bg-black/5">

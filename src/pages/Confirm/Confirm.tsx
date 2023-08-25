@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
-import ArticleIcon from "@mui/icons-material/Article";
 import { useNavigate } from "react-router-dom";
 
 export default function Confirm() {
@@ -21,32 +20,6 @@ export default function Confirm() {
           </Button>
         </div>
       </Container>
-      <div className="bg-neutral-100 py-4 w-full -mb-0.5 z-[10] font-semibold">
-        <Container className="flex flex-row justify-between">
-          <a
-            target="_blank"
-            href="https://documente.code-envision.ro/termeni_conditii.pdf"
-            className="flex w-fit flex-col gap-2 items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all"
-            rel="noreferrer"
-          >
-            <div className="text-6xl lg:text-8xl">
-              <ArticleIcon fontSize="inherit" />
-            </div>
-            <label>Termeni si Conditii</label>
-          </a>
-          <a
-            target="_blank"
-            href="https://documente.code-envision.ro/descriere_subiect.pdf"
-            className="flex w-fit flex-col gap-2  items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all"
-            rel="noreferrer"
-          >
-            <div className="text-6xl lg:text-8xl">
-              <ArticleIcon fontSize="inherit" />
-            </div>
-            <label>Descriere Subiect</label>
-          </a>
-        </Container>
-      </div>
     </div>
   );
 }
