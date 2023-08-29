@@ -5,33 +5,28 @@ import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 const calendar = [
   {
-    date: ">25",
-    month: "Septembrie",
+    date: ">23",
+    month: "Octombrie",
     title: "Inscrierea Concurentilor",
     content: [],
   },
   {
-    date: "29",
-    month: "Septembrie",
+    date: "27",
+    month: "Octombrie",
     title:
       "Participanții vor sosi în oraș și vor fi preluați de către voluntari.",
     content: [],
   },
   {
-    date: "30",
-    month: "Septembrie",
+    date: "28",
+    month: "Octombrie",
     title: "PRIMA ZI A COMPETIȚIEI",
     content: [
-      {
-        hour: "08:00",
-        title: "Deschiderea oficială",
-      },
+      { hour: "08:00", title: "Deschiderea oficială" },
       { hour: "08:30", title: "Trimiterea subiectelor către participanți" },
-      { hour: "12:00", title: "Masa 1" },
       { hour: "16:00", title: "Workshop 1 : To be announced" },
       { hour: "20:00", title: "Subiecte BLITZ" },
-      { hour: "21:00", title: "Masa 2" },
-      { hour: "** : **", title: "*surprise event*" },
+      { hour: "**:**", title: "Surprise event :) " },
     ],
   },
   {
@@ -39,28 +34,12 @@ const calendar = [
     month: "Octombrie",
     title: "A DOUA ZI A COMPETIȚIEI",
     content: [
-      {
-        hour: "08:00",
-        title: "Deschiderea oficială",
-      },
+      { hour: "08:00", title: "Status meeting" },
       { hour: "10:00", title: "Workshop 2 : To be announced" },
-      { hour: "12:00", title: "Masa 3" },
-      { hour: "14:00", title: "Finalizarea subiectelor -- Deadline" },
-      { hour: "14:30", title: "Inceperea sesiunii de jurizare" },
+      { hour: "12:00", title: "Finalizarea subiectelor -- Deadline" },
+      { hour: "12:30", title: "Inceperea sesiunii de jurizare" },
       { hour: "18:30", title: "Festivitatea de premiere" },
-      { hour: "19:00", title: "Decernarea premiilor" },
       { hour: "20:00", title: "Concluzii, incheiere" },
-    ],
-  },
-  {
-    date: "02",
-    month: "Octombrie",
-    title: "Final",
-    content: [
-      {
-        hour: "10:00",
-        title: "Plecarea participantilor",
-      },
     ],
   },
 ];
@@ -131,7 +110,7 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
             {schedule.month}
           </label>
         </div>
-        <div className="absolute top-20 md:top-auto md:left-40 h-[2px] w-[85%] md:h-[75%] md:w-[2px] s-primary my-4" />
+        <div className="absolute top-20 bg-primary md:top-auto md:left-40 h-[1px] w-[85%] md:h-[75%] md:w-[2px] s-primary my-4" />
         <div className="w-full flex flex-col gap-4">
           <label className="mx-auto text-xl md:text-2xl font-bold ms-2 uppercase text-black/75">
             {schedule.title}

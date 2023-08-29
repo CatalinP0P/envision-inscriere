@@ -8,13 +8,13 @@ export default function SignUp() {
     <Container className="py-16 flex flex-col items-center" id="sign">
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
-          Pana in data de 25 Septembrie
+          Pâna in data de 23 Septembrie
         </label>
       </Reveal>
 
       <Reveal>
         <label className="text-4xl lg:text-6xl font-light pb-4">
-          Inscrie-te Acum!
+          Înscrie-te acum!
         </label>
       </Reveal>
       <SignForm />

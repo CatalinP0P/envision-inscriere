@@ -29,31 +29,31 @@ export default function About() {
         <Reveal>
           <div className="flex flex-col gap-2 pt-8 w-full pb-40 md:pb-24 [&>*]:text-justify [&>p]:indent-8 text-black/60 text-lg md:text-xl">
             <p className="w-[100%] ">
-              Competitia envision reprezinta un maraton de programare de 24 de
-              ore adresat tinerilor din toata tara in care participantii,
-              singuri sau in echipe de 2 persoane, vor crea solutii inteligente
-              pentru probleme comunitare ale oraselor din Romania
+              Competiția envision reprezintă un maraton de programare de 24 de
+              ore adresat tinerilor din țoață tara în care participanții,
+              singuri sau în echipe de 2 persoane, vor crea soluții inteligente
+              pentru probleme comunitare ale orașelor din Romania
             </p>
             <p>
-              Suntem deschisi spre creativitate si astfel vom lua in considerare
-              orice rezolvare, in orice limbaj si cu orice tehnologie. Singura
-              cerinta din acest punct de vedere este cunoasterea temeinica a
+              Suntem deschiși spre creativitate și astfel vom lua în considerare
+              orice rezolvare, în orice limbaj și cu orice tehnologie. Singura
+              cerință din acest punct de vedere este cunoașterea temeinică a
               limbajului ales.
             </p>
             <p>
-              Competitia envision va lua loc in Ploiesti , in data de 30
-              septembrie. Cazarea este asigurata de organizatori. Timp de două
+              Competiția envision va lua loc în Ploiești , în data de 30
+              septembrie. Cazarea este asigurată de organizatori. Timp de două
               zile vom trăi împreună emoțiile subiectelor, adrenalina
               cronometrului și pasiunea pentru programare.
             </p>
             <p>
               Vei putea participa la workshop-uri organizate de persoane
-              importante din domeniu care iti vor oferi informatii pretioase
-              despre cariera cat si oportunitati de dezvoltare.
+              importante din domeniu care iți vor oferi informații prețioase
+              despre carieră cât și oportunități de dezvoltare.
             </p>
             <div className="flex flex-col md:ms-8 md:flex-row gap-4 items-baseline w-full pt-8">
               <p className="text-black text-center w-full sm:w-fit">
-                Inscrierile au inceput, arata-ne ce poti.
+                Înscrierile au început, arată-ne ce poți.
               </p>
               <Button
                 className="text-sm bg-primary rounded-md text-white px-3 py-2 w-full sm:w-fit"

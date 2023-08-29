@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../components/Animation/Reveal";
-import podiumImg from "../../assets/awards.svg";
+import podiumImg from "../../assets/awards.png";
 import SlideFromBottom from "../../components/Animation/SlideFromBottom";
 
 export default function Awards() {

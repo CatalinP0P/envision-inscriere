@@ -166,7 +166,7 @@ export default function SignForm() {
                 type="submit"
                 rounded={false}
               >
-                Inscrie-te
+                Înscrie-te
               </Button>
               <label>
                 Ai nelamuriri? Contacteaza-ne oricand, la telefon sau pe

@@ -30,18 +30,23 @@ export default function Hero() {
           <Envision className="h-20 md:h-auto translate-x-[6%]" />
         </Reveal>
         <Reveal color="white">
-          <label className="text-white/75 font-semibold">
-            Solutii inteligente pentru probleme comunitare
-          </label>
+          <div className="flex flex-col">
+            <label className="text-white/75 font-semibold">
+              Înscrie-te acum
+            </label>
+            <label className="text-white/75 font-semibold">
+              Soluții inteligente pentru probleme comunitare
+            </label>
+          </div>
           <div className="h-[2px] w-[6rem] my-4 bg-white mx-auto" />
           <p className="text-white/50 font-semibold">
-            Maratonul de programare pentru tinerii din toata tara.
+            Maratonul de programare pentru tinerii din toată țara
           </p>
         </Reveal>
         <Reveal color="white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-fit pt-16 overflow-visible p-2">
             <Button color="white" onClick={() => scrollToSign()}>
-              Inscrie-te Acum
+              Înscrie-te acum
             </Button>
             <Button
               variant="secondary"
