@@ -15,8 +15,10 @@
   }
 }
 
+.slide {
+  animation: slide 15s linear infinite;
+}
 
-.slide 
-{
-  animation: slide 15s linear infinite
+.paint {
+  contain: paint;
 }

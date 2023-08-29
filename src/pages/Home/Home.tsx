@@ -34,7 +34,7 @@ export default function Home() {
       {/* <div className="w-full bg-black/5">
         <Organizators />
       </div> */}
-      <div className="bg-black/5">
+      <div className="bg-black/5 w-[100vw]">
         <Sponsors />
       </div>
       <ToastContainer

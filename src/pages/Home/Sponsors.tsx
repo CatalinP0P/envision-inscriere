@@ -28,7 +28,7 @@ export default function Sponsors() {
       <SlideFromBottom className="w-full">
         <Container className="grid grid-cols-2 md:grid-cols-4 w-full justify-between items-center pt-6">
           <img className="w-full max-h-[100px] object-contain" src={sponsor3} />
-          <img className="w-full max-h-[100px] object-contain" src={sponsor4} />
+          <img className="w-full max-h-[70px] object-contain" src={sponsor4} />
           <img className="w-full max-h-[100px] object-contain" src={sponsor1} />
           <img className="w-full max-h-[100px] object-contain" src={sponsor2} />
         </Container>
