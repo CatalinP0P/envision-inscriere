@@ -52,7 +52,7 @@ export default function Schedule() {
     >
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
-          25 Septembrie - 2 Octombrie
+          27 - 29 Octombrie
         </label>
       </Reveal>
       <Reveal>

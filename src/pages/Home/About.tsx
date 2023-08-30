@@ -22,7 +22,7 @@ export default function About() {
 
         <Reveal>
           <label className="text-4xl lg:text-6xl font-light pb-4">
-            Despre Hackaton
+            Despre Maraton
           </label>
         </Reveal>
 
@@ -30,7 +30,7 @@ export default function About() {
           <div className="flex flex-col gap-2 pt-8 w-full pb-40 md:pb-24 [&>*]:text-justify [&>p]:indent-8 text-black/60 text-lg md:text-xl">
             <p className="w-[100%] ">
               Competiția envision reprezintă un maraton de programare de 24 de
-              ore adresat tinerilor din țoață tara în care participanții,
+              ore adresat tinerilor din toață tara în care participanții,
               singuri sau în echipe de 2 persoane, vor crea soluții inteligente
               pentru probleme comunitare ale orașelor din Romania
             </p>
@@ -63,7 +63,7 @@ export default function About() {
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                Inscrie-te acum
+                Înscrie-te acum
               </Button>
             </div>
           </div>
