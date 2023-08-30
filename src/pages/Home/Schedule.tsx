@@ -30,7 +30,7 @@ const calendar = [
     ],
   },
   {
-    date: "01",
+    date: "29",
     month: "Octombrie",
     title: "A DOUA ZI A COMPETIȚIEI",
     content: [

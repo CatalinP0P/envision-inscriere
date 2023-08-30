@@ -32,9 +32,6 @@ export default function Hero() {
         <Reveal color="white">
           <div className="flex flex-col">
             <label className="text-white/75 font-semibold">
-              Înscrie-te acum
-            </label>
-            <label className="text-white/75 font-semibold">
               Soluții inteligente pentru probleme comunitare
             </label>
           </div>
