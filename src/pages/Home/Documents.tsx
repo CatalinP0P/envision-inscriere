@@ -7,18 +7,18 @@ export default function Documents() {
     <Container className="grid grid-cols-2 gap-y-6 lg:grid-cols-4 mx-auto justify-between py-8">
       <a
         target="_blank"
-        href="https://documente.code-envision.ro/termeni_conditii.pdf"
+        href="https://documente.code-envision.ro/regulament-maraton.docx"
         className="flex w-full flex-col gap-2 items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all"
         rel="noreferrer"
       >
         <div className="text-6xl lg:text-8xl">
           <ArticleIcon fontSize="inherit" />
         </div>
-        <label>Termeni şi Condiţii</label>
+        <label>Regulament maraton</label>
       </a>
       <a
         target="_blank"
-        href="https://documente.code-envision.ro/acord_parental.pdf"
+        href="https://documente.code-envision.ro/acord-parental.docx"
         className="flex w-full flex-col gap-2  items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all"
         rel="noreferrer"
       >
@@ -29,7 +29,7 @@ export default function Documents() {
       </a>
       <a
         target="_blank"
-        href="https://documente.code-envision.ro/declaratie_de_consimtamant.pdf"
+        href="https://documente.code-envision.ro/consimtamant_gdpr.png"
         className="flex w-full flex-col gap-2 items-center text-primary font-semibold cursor-pointer hover:text-primary/50 transition-all"
         rel="noreferrer"
       >
