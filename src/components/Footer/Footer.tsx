@@ -29,19 +29,14 @@ export default function Footer() {
         <div className="w-full flex flex-col gap-2 items-center text-start text-white">
           <div className="w-fit text-start items-start flex flex-col gap-2">
             <label className="font-bold text-2xl">Find us at</label>
-            <a className="cursor-pointer [&>*]:pointer-events-none">
+            <a
+              className="cursor-pointer [&>*]:pointer-events-none"
+              target="_blank"
+              href="https://www.facebook.com/ObservatorulPrahovean"
+              rel="noreferrer"
+            >
               <div className="flex flex-row gap-4 items-center cursor-pointer">
                 <FacebookSVG className="w-6 h-6 fill-white" />
-                <label>Envision</label>
-              </div>
-            </a>
-            <a
-              href="asfdasw"
-              target="_blank"
-              className="cursor-pointer [&>*]:pointer-events-none"
-            >
-              <div className="flex flex-row gap-4 items-center">
-                <FacebookSVG className="w-6 h-6 fill-white " />
                 <label>Observatorul Prahovean</label>
               </div>
             </a>

@@ -24,6 +24,7 @@ export default function Hero() {
       <img
         src={heroImage}
         className="absolute left-0 top-0 w-full h-full object-cover z-[1]"
+        alt="hero"
       />
       <div className="z-[3] absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col gap-4 text-white text-center text-sm max-w-[90%] md:text-md lg:text-2xl items-center">
         <Reveal color="white">
