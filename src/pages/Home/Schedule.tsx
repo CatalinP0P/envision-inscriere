@@ -1,45 +1,45 @@
-import React from "react";
-import Reveal from "../../components/Animation/Reveal";
-import Container from "../../components/ui/Container";
-import SlideFromBottom from "../../components/Animation/SlideFromBottom";
+import React from 'react';
+import Reveal from '../../components/Animation/Reveal';
+import Container from '../../components/ui/Container';
+import SlideFromBottom from '../../components/Animation/SlideFromBottom';
 
 const calendar = [
   {
-    date: ">23",
-    month: "Octombrie",
-    title: "Inscrierea Concurentilor",
+    date: '>30',
+    month: 'Octombrie',
+    title: 'Inscrierea Concurentilor',
     content: [],
   },
   {
-    date: "27",
-    month: "Octombrie",
+    date: '3',
+    month: 'Noiembrie',
     title:
-      "Participanții vor sosi în oraș și vor fi preluați de către voluntari.",
+      'Participanții vor sosi în oraș și vor fi preluați de către voluntari.',
     content: [],
   },
   {
-    date: "28",
-    month: "Octombrie",
-    title: "PRIMA ZI A COMPETIȚIEI",
+    date: '4',
+    month: 'Noiembrie',
+    title: 'PRIMA ZI A COMPETIȚIEI',
     content: [
-      { hour: "08:00", title: "Deschiderea oficială" },
-      { hour: "08:30", title: "Trimiterea subiectelor către participanți" },
-      { hour: "16:00", title: "Workshop 1 : To be announced" },
-      { hour: "20:00", title: "Subiecte BLITZ" },
-      { hour: "**:**", title: "Surprise event :) " },
+      { hour: '08:00', title: 'Deschiderea oficială' },
+      { hour: '08:30', title: 'Trimiterea subiectelor către participanți' },
+      { hour: '16:00', title: 'Workshop 1 : To be announced' },
+      { hour: '20:00', title: 'Subiecte BLITZ' },
+      { hour: '**:**', title: 'Surprise event :) ' },
     ],
   },
   {
-    date: "29",
-    month: "Octombrie",
-    title: "A DOUA ZI A COMPETIȚIEI",
+    date: '5',
+    month: 'Noiembrie',
+    title: 'A DOUA ZI A COMPETIȚIEI',
     content: [
-      { hour: "08:00", title: "Status meeting" },
-      { hour: "10:00", title: "Workshop 2 : To be announced" },
-      { hour: "12:00", title: "Finalizarea subiectelor -- Deadline" },
-      { hour: "12:30", title: "Inceperea sesiunii de jurizare" },
-      { hour: "18:30", title: "Festivitatea de premiere" },
-      { hour: "20:00", title: "Concluzii, incheiere" },
+      { hour: '08:00', title: 'Status meeting' },
+      { hour: '10:00', title: 'Workshop 2 : To be announced' },
+      { hour: '12:00', title: 'Finalizarea subiectelor -- Deadline' },
+      { hour: '12:30', title: 'Inceperea sesiunii de jurizare' },
+      { hour: '18:30', title: 'Festivitatea de premiere' },
+      { hour: '20:00', title: 'Concluzii, incheiere' },
     ],
   },
 ];
@@ -52,7 +52,7 @@ export default function Schedule() {
     >
       <Reveal>
         <label className="font-bold uppercase text-md text-primary">
-          27 - 29 Octombrie
+          30 Octombrie - 5 Noiembrie
         </label>
       </Reveal>
       <Reveal>
@@ -98,10 +98,10 @@ const ScheduleCard = ({ schedule }: { schedule: any }) => {
         <div className="flex flex-col gap-2 md:items-center">
           <label
             className={
-              "text-primary text-2xl md:text-6xl font-semibold " +
-              (schedule.date.includes(">")
-                ? " md:translate-x-[-28px] -me-8"
-                : "")
+              'text-primary text-2xl md:text-6xl font-semibold ' +
+              (schedule.date.includes('>')
+                ? ' md:translate-x-[-28px] -me-8'
+                : '')
             }
           >
             {schedule.date}
